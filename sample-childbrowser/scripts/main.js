@@ -63,10 +63,14 @@ ChildbrowserApp.prototype = {
     },
 	
     _openExternal: function () {
-		var that = this,
+        var that = this,
             url = that.urlField.value;
-        
-		window.plugins.childBrowser.openExternal(url);
+        if(device.platform == 'Android') {
+            window.plugins.childBrowser.openExternal(url);
+        } else {
+            that._addMessageToLog.call(that, "Supported only in Android");
+        }
+		
 	},
 
     _addMessageToLog: function(message) {
