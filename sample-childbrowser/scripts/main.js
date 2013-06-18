@@ -69,7 +69,8 @@ ChildbrowserApp.prototype = {
         if(device.platform == 'Android') {
             window.plugins.childBrowser.openExternal(url);
         } else {
-            that._addMessageToLog.call(that, "Supported only in Android");
+            //open external is Android only
+            window.open(url, "_system");
         }
 		
 	},
