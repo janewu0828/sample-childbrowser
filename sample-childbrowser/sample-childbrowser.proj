@@ -65,9 +65,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
-    <Content Include="styles\img\background.png" />
-    <Content Include="styles\img\footer-background.png" />
-    <Content Include="styles\img\header.png" />
     <Content Include="styles\img\logo.png" />
     <Content Include="styles\main.css" />
     <Content Include="scripts\main.js" />
