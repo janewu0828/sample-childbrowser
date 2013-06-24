@@ -93,7 +93,10 @@ body
     border-top: 1px solid #9ca1a5;
     position:relative;
 }
-
+.content > .input-area,
+.content > .action-area {
+    border-top-color:#fff;
+}
 .content > .input-area.ch100,
 .content > .action-areach100,
 .content > .result-area.ch100 {
@@ -241,10 +244,4 @@ body
         height:32px;
         width:240px; 
     }
-}
-
-/*specific*/
-.content > .input-area,
-.content > .action-area {
-    border-top-color:#fff;
 }
