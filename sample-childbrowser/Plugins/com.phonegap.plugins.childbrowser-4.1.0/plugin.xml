@@ -19,12 +19,6 @@
             </activity>
         </config-file>
 
-        <!-- Cordova 1.5 - 1.9 -->
-        <config-file target="res/xml/plugins.xml" parent="/plugins">
-            <plugin name="ChildBrowser"
-                value="com.phonegap.plugins.childBrowser.ChildBrowser"/>
-        </config-file>
-
         <!-- Cordova >= 2.0.0 -->
         <config-file target="res/xml/config.xml" parent="plugins">
             <plugin name="ChildBrowser"
