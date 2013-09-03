@@ -5,10 +5,9 @@ document.addEventListener("touchstart", function() {
 }, false);
 
 function onDeviceReady() {
-    alert("1");
-
-    window.plugins.childBrowser.showWebPage('http://www.google.com', { showLocationBar: true });
-    alert("2");
+    // alert("1");
+    // window.plugins.childBrowser.showWebPage('http://www.google.com', { showLocationBar: true });
+    // alert("2");
 
     navigator.splashscreen.hide();
     var childbrowserApp = new ChildbrowserApp();
@@ -32,12 +31,16 @@ ChildbrowserApp.prototype = {
         
         showWebPageButton.addEventListener("click",
                                            function() { 
+                                                alert("3");
                                                that._showWebPage.call(that); 
+                                               alert("4");
                                            });
         
         openExternalButton.addEventListener("click",
                                             function() {
+                                                alert("5");
                                                 that._openExternal.call(that);
+                                                alert("6");
                                             });
         
         //Childbrowser events
@@ -60,6 +63,7 @@ ChildbrowserApp.prototype = {
     },
     
     _showWebPage: function() {
+        alert("show1");
         var that = this,
         url = that.urlField.value;
         if (device.uuid == "e0101010d38bde8e6740011221af335301010333" || device.uuid == "e0908060g38bde8e6740011221af335301010333") {
@@ -70,6 +74,7 @@ ChildbrowserApp.prototype = {
                                                     { showLocationBar: true },
                                                     { showAddress : true },
                                                     { showNavigationBar : true });
+        alert("show2");
     },
 	
     _openExternal: function () {
