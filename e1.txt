@@ -1,0 +1,1 @@
+﻿D/CordovaLog(30887): file:///android_asset/www/scripts/main.js: Line 88 : Uncaught TypeError: Cannot read property 'childBrowser' of undefined
