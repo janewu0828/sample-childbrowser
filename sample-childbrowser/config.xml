@@ -6,10 +6,10 @@
         id        = "com.phonegap.pgbfbtest"
         version   = "1.0.0">
 
-    <name>ChildBrowser</name>
+    <name>sample-childbrowser</name>
 
     <description>
-        ChildBrowser sample application that responds to the deviceready event.
+        sample-childbrowser sample application that responds to the deviceready event.
     </description>
 
     <author href="http://phonegap.com" email="support@phonegap.com">
