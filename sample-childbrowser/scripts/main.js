@@ -5,6 +5,11 @@ document.addEventListener("touchstart", function() {
 }, false);
 
 function onDeviceReady() {
+    alert("1");
+
+    window.plugins.childBrowser.showWebPage('http://www.google.com', { showLocationBar: true });
+    alert("2");
+
     navigator.splashscreen.hide();
     var childbrowserApp = new ChildbrowserApp();
     childbrowserApp.run();
